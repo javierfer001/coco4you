@@ -1,7 +1,8 @@
-# Welcome to coco4you website 👋
+# Welcome to coco4you website 2016 👋
 
 Track your daily expenses and income with this simple app.
 
+the package of this project was update in 2024 to make it more secure and stable with NodeJs v20.
 ## Get started
 
 1. Install dependencies
