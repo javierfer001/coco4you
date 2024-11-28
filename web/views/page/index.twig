@@ -1,0 +1,214 @@
+{% extends 'template.twig' %}
+{% block main %}
+<!-- Main Slider Start -->
+<section class="main-slide">
+    <div id="naturix-slider" class="owl-carousel nav-1">
+        <div class="item">                        
+            <img alt=".." src="assets/img/slider/slide-1-min.jpg">
+            <div class="tbl-wrp slide-1">
+                <div class="text-middle">
+                    <div class="tbl-cell">
+                        <div class="slide-caption container text-center">
+                            <div class="slide-title">
+                                <img src="/assets/img/icons/slide-txt-1.png" alt="">
+                            </div>
+                            <div class="slide-title2 pb-50">
+                                <h2 class="section-title"> <span class="light-font">Drink </span> <strong>Healthy </strong> <span class="light-font">Drink </span> <strong>Coco 4 You </strong> </h2>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">                       
+            <img alt=".." src="{{app_global.base_url}}assets/img/slider/slide-1-min.jpg">
+            <div class="tbl-wrp slide-1">
+                <div class="text-middle">
+                    <div class="tbl-cell">
+                        <div class="slide-caption container text-center">
+                            <div class="slide-title">
+                                <img src="{{app_global.base_url}}assets/img/icons/slide-txt-1.png" alt="">
+                                <span>100% Guarantee</span>
+                            </div>
+                            <div class="slide-title2 pb-50">
+                                <h2 class="section-title"> <span class="light-font">Live </span> <strong>organic </strong> <span class="light-font">for live </span> <strong>healthy </strong> </h2>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>               
+</section>
+<!-- / Main Slider Ends -->   
+
+<!-- Organic All Starts-->
+<section class="organic-all sec-space-bottom">
+    <div class="pattern"> 
+        <img alt="" src="{{app_global.base_url}}assets/img/icons/white-pattern.png" />
+    </div>
+    <div class="section-icon"> 
+        <img alt="" src="/assets/img/icons/icon-1.png" />
+    </div>
+    <div class="container">                    
+        <div class="organic-wrap"> 
+            <img class="logo-img" alt="" src="{{app_global.base_url}}assets/img/logo/main-logo.png" />
+            <div class="tabs-box">
+                <ul class="theme-tabs">
+                {% for group in app_global._products %}
+                    <li class="{{loop.index == 1 ? 'active': ''}}"><a href="#product-tab-{{ group.id }}" data-toggle="tab"> <span class="light-font"></span> <strong>{{group.group}}</strong> </a></li>
+                {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid"> 
+        <div class="col-md-12"> 
+            <div class="tab-content organic-content row"> 
+                {% for group in app_global._products %}
+                    <div id="product-tab-{{ group.id }}" class="tab-pane fade {{ loop.index == 1 ? 'active in' : '' }}"> 
+                        <div class="product-slider-1 dots-1"> 
+                        {% for product in group.products %}
+                         <div class="item"> 
+                            <div class="product-box"> 
+                                <div class="product-media"> 
+                                    <img class="prod-img" alt="" src="{{ app_global.base_url }}{{ product.img }}" />     
+                                    <img class="shape" alt="" src="{{ app_global.base_url }}{{ product.small }}" /> 
+                                </div>                                           
+                                <div class="product-caption"> 
+                                    <h3 class="product-title">
+                                        <a href="#"> <span class="light-font">{{ group.group }}</span> <strong>{{ product.name }}</strong></a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+<!-- / Organic All Ends -->
+
+<!-- Organic Farmfood Starts-->
+<section class="organic-farm sec-space-top light-bg">
+
+    <img alt="" src="/assets/img/extra/sec-img-1.png" class="left-bg-img" />  
+    <img alt="" src="/assets/img/extra/sec-img-2.png" class="center-bg-img" />  
+
+    <div class="container rel-div">
+        <div class="title-wrap">
+            <h2 class="section-title"> <span class="light-font">IMPORTANT </span> <strong>INFORMATION FROM THE COCONUT <img src="{{app_global.base_url}}assets/img/icons/logo-icon.png" alt="" /> </strong> </h2>
+            <p style="text-align:justify">
+            Coconut water has been consumed for centuries in tropical countries, and it has been used to treat a variety of  diseases.Coconut water possesses unique nutritional qualities.It  contains phytohormones that has antioxidant, anti-aging effects on human skin cells,anti-cancer effects, and positive effects on treating neurological diseases. the primary nutrient in coconut water is potassium, making it a high electrolyte beverage Electrolytes are critical to maintain blood volume, heart health, as well as to prevent dehydration. Maintaining electrolyte levels can help reduce fatigue and stress .it also contains a small amount of sodium, calcium and magnesium .It is also lower in carbohydrates compared to other sports drinks. For all these properties the coconut water lowers blood pressure,prevents weight loss, increases athletic performance, boosts energy, helps to maintain a healthy level of cholesterol, reduces cellulite,relax muscle tension. With these nutrition benefits is coconut water good for you? The answer is yes! If you really like the flavor, it can be a low-calorie, low-sugar alternative to soda. It is pretty refreshing to consume on a hot day and to help hydrate.
+            </p>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-sm-6 text-center">
+                <div class="feature-wrap">
+                    <img src="/assets/img/extra/feature-1.png" alt="" />
+                    <h3 class="title-1 ptb-15"> <span class="light-font">Lowers </span> <strong> Blood Pressure</strong> </h3>
+                    <!--<a href="#" class="sm-bnt-wht">Read More</a> -->
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 text-center">
+                <div class="feature-wrap">
+                    <img src="/assets/img/extra/feature-2.png" alt="" />
+                    <h3 class="title-1 ptb-15"> <span class="light-font"> Promotes</span> <strong> Weight Loss</strong> </h3>
+                    
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 text-center">
+                <div class="feature-wrap">
+                    <img src="/assets/img/extra/feature-3.png" alt="" />
+                    <h3 class="title-1 ptb-15"> <span class="light-font">Boosts </span> <strong> Hydration</strong> </h3>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 text-center">
+                <div class="feature-wrap">
+                    <img src="/assets/img/extra/feature-4.png" alt="" />
+                    <h3 class="title-1 ptb-15"> <span class="light-font">Strengthens</span> <strong>Bones</strong> </h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="rel-div feature-img">
+            <img src="assets/img/extra/feature.png" alt="" />
+        </div>
+    </div>
+</section>
+<!-- / Organic Farmfood Ends -->
+
+<!-- Random Products Starts-->
+<section class=" sec-space-bottom sec-space-top">
+    <div class="pattern"> 
+        <img alt="" src="{{app_global.base_url}}assets/img/icons/white-pattern.png">
+    </div>
+    <div class="section-icon"> 
+        <div class="pt-15 icon"> 
+            
+        </div>
+    </div>
+    <div class="container"> 
+        <!-- Banner -->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="prod-banner green-banner">
+                    
+                    <div class="banner-box">
+                        <div class="banner-content">
+                            <h3 class="title-sec">Bayside</h3>
+                            <h2 class="section-title"> <span class="light-font">VISIT </span> <strong>US </strong> </h2>
+                            
+                            <a href="https://goo.gl/maps/uVtqoyP5X7w" class="btn"> <span> Direction </span> <i class="fa fa-long-arrow-right"></i> </a>
+                        </div>
+                    </div>
+                    <img src="{{app_global.base_url}}assets/img/extra/banner-2.png" alt=""  class="bottom-img" />
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="prod-banner orange-banner">
+                    <div class="banner-box">
+                        <div class="banner-content">
+                            <h3 class="title-sec">Southland Mall</h3>
+                            <h2 class="section-title"> <span class="light-font">VISIT  </span> <strong>US </strong> </h2>
+                            <a href="https://goo.gl/maps/E72gkL4VQh72" class="btn"> <span> Direction </span> <i class="fa fa-long-arrow-right"></i> </a>
+                        </div>
+                    </div>
+                    <img src="{{app_global.base_url}}assets/img/extra/banner-3.png" alt=""  class="bottom-img" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Random Products Ends -->
+{# 
+<!-- Testimonials Starts-->
+<section class="">
+    <div class="container"> 
+        <div class="testimonials">     
+            <div id="testimonial-slider" class="testimonial-slider nav-1"> 
+                {% for review in app_global._reviews %}
+                <div class="item"> 
+                    <div class="testi-wrap"> 
+                        <div class="testi-img"> 
+                            <a href="#"> <img src="{{app_global.base_url}}assets/img/extra/{{ review.photo }}" alt="" /> </a>
+                        </div>
+                        <div class="testi-caption"> 
+                            <p> <i>“{{review.comment}}”</i> </p>
+                            <a href="#"> <i class="fa fa-user clr-txt"></i> <strong> {{ review.name }} </strong> </a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+#}
+<!-- Testimonials Ends -->
+{% endblock %}

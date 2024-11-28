@@ -1,0 +1,158 @@
+{
+    "base_url": "/",
+    "_company": "Coco 4 You USA",
+    "_email": "info@coco4youusa.com",
+    "_facebook": "https://www.facebook.com/coco4youusa/",
+    "_phone": {
+        "link": "7861111111",
+        "show": "786 111 1111"
+    },
+    "_menu": [
+        {
+            "label": "Home",
+            "url": "",
+            "submenu": []
+        },
+        {
+            "label": "About Us",
+            "url": "about-us",
+            "submenu": []
+        },
+        {
+            "label": "Contact Us",
+            "url": "contact-us",
+            "submenu": []
+        },
+        {
+            "label": "Franchises",
+            "url": "franchises",
+            "submenu": []
+        },
+        {
+            "label": "Privacy & Terms",
+            "url": "privacy",
+            "submenu": []
+        }
+    ],
+    "_reviews": [
+        {
+            "name": "Emma Blanco",
+            "photo": "testi-1.jpg",
+            "comment": "coco 4 you es lo maximo!"
+        },
+        {
+            "name": "Luis Garcia",
+            "photo": "testi-2.jpg",
+            "comment": "Lorem ipsum dolor sit amet, consectetuer adipiscing elitsed the diam nonummy nibh euismod tincidunt."
+        },
+        {
+            "name": "Mercedez Ruiz",
+            "photo": "testi-3.jpg",
+            "comment": "Lorem ipsum dolor sit amet, consectetuer adipiscing elitsed the diam nonummy nibh euismod tincidunt."
+        },
+        {
+            "name": "Thalia Diaz",
+            "photo": "testi-4.jpg",
+            "comment": "Lorem ipsum dolor sit amet, consectetuer adipiscing elitsed the diam nonummy nibh euismod tincidunt."
+        }
+        ,
+        {
+            "name": "Marisol Bolognesi",
+            "photo": "testi-5.jpg",
+            "comment": "Lorem ipsum dolor sit amet, consectetuer adipiscing elitsed the diam nonummy nibh euismod tincidunt."
+        },
+
+        {
+            "name": "Lianet Ferndandez",
+            "photo": "testi-6.jpg",
+            "comment": "Lorem ipsum dolor sit amet, consectetuer adipiscing elitsed the diam nonummy nibh euismod tincidunt."
+        }
+    ],
+    "_products": [{
+            "group": "Coconut",
+            "img": "",
+            "id": 1,
+            "products": [
+                {
+                    "id": 1,
+                    "name": "Water 8oz",
+                    "img": "assets/img/products/1.jpg",
+                    "small": "assets/img/icons/shap-small.png"
+                },
+                {
+                    "id": 2,
+                    "name": "Water 12oz",
+                    "img": "assets/img/products/2.jpg",
+                    "small": "assets/img/icons/shap-small.png"
+                },
+                {
+                    "id": 3,
+                    "name": "Water 16oz",
+                    "img": "assets/img/products/3.jpg",
+                    "small": "assets/img/icons/shap-small.png"
+                },
+                {
+                    "id": 3,
+                    "name": "Water 1lt",
+                    "img": "assets/img/products/4.jpg",
+                    "small": "assets/img/icons/shap-small.png"
+                },
+                {
+                    "id": 3,
+                    "name": "Horchata",
+                    "img": "assets/img/products/5.jpg",
+                    "small": "assets/img/icons/shap-small.png"
+                }
+            ]
+        },
+        {
+            "group": "Smoothies",
+            "img": "",
+            "id": 2,
+            "products": [
+                {
+                    "id": 21,
+                    "name": "Smoothie",
+                    "img": "assets/img/products/smoothie.jpg",
+                    "small": "assets/img/icons/shap-small.png"
+                },{
+                    "id": 22,
+                    "name": "Coconut Smoothie",
+                    "img": "assets/img/products/smoothie11.jpg",
+                    "small": "assets/img/icons/shap-small.png"
+                },{
+                    "id": 22,
+                    "name": "Mango Smoothie",
+                    "img": "assets/img/products/smoothie_mango1.jpg",
+                    "small": "assets/img/icons/shap-small.png"
+                }
+            ]
+        },
+        {
+            "group": "Ice Cream",
+            "img": "",
+            "id": 3,
+            "products": [
+                {
+                    "id": 5,
+                    "name": "Coco glaze",
+                    "img": "assets/img/products/glaze.jpg",
+                    "small": "assets/img/icons/shap-small.png"
+                }
+            ]
+        },
+        {
+            "group": "Meat",
+            "img": "",
+            "id": 4,
+            "products": [
+                {
+                    "id": 6,
+                    "name": "Coconut Meat",
+                    "img": "assets/img/products/meat.jpg",
+                    "small": "assets/img/icons/shap-small.png"
+                }
+            ]
+        }
+    ]
+}

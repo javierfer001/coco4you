@@ -1,0 +1,55 @@
+{% extends 'template.twig' %} {% block main %}
+<!-- Header -->
+<section class="breadcrumb-bg">
+    <div class="theme-container container ">
+        <div class="site-breadcumb white-clr">
+            <h2 class="section-title">
+                <span class="light-font"> </span>
+                <strong class="clr-txt">
+                    {% for title in app_global._menu %} {% if title.url == params.page %} {{ title.label }} {% endif %} {% endfor %}
+                </strong>
+            </h2>
+        </div>
+    </div>
+</section>
+<!-- Organic Farmfood Starts-->
+
+<!-- / Organic Farmfood Ends -->
+
+<!-- About Us Starts-->
+<section class="short-about sec-space">
+
+    <img alt="" src="assets/img/extra/sec-img-1.png" class="left-top-img">
+    <img alt="" src="assets/img/extra/sec-img-3.png" class="center-bg-img">
+    <img alt="" src="assets/img/extra/sec-img-1.png" class="left-bottom-img">
+
+    <div class="container rel-div">
+        <div class="title-wrap pt-15">
+            <h4 class="fsz-20">
+                <strong>Coco 4 You</strong>
+                <span class="light-font"> since 2016 </span>
+            </h4>
+            <h2 class="fsz-50 over-txt-title">
+                <span class="light-font"> COCONUT
+                    <span class="over-txt light-bg">Water 100% NATURAL</span>
+                </span>
+                <strong>WATER</strong>
+            </h2>
+            <p>Coco 4 you is a tropical franchise that was born in Brazil under the name of Coco Express. It emerged with the
+                purpose of implementing a new method in the sale of coconut water while offering a new system of extraction
+                and cooling, that guarantees the quality of a product 100% natural and fresh. Our main product is coconut
+                water which is extracted from its fruit hygienically. After extraction, the water is cooled and bottled immediately
+                giving customers a refreshing and healthy drink, but mostly natural. Through highly innovative techniques,
+                we also offer the mass of coconut in their natural state and a range of products derived therefrom. Besides
+                the United States, Coco Express is successfully active in different countries such as Brazil, Costa Rica,
+                Dominican Republic, Panama, Venezuela, Colombia, France, Portugal and Mexico. </p>
+        </div>
+
+        <div class="about-wrap">
+            <h2 class="font-3 fsz-35">Drink Healthy, Drink Coco 4 You</h2>
+        </div>
+    </div>
+
+</section>
+
+{% endblock %}

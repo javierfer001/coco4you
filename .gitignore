@@ -1,0 +1,7 @@
+node_modules/
+
+.idea
+
+example
+
+web/config/prod_config.json
